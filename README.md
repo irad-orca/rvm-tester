@@ -30,9 +30,9 @@ To replicate you can run:
    python extract.py --type node --log_file ghost.log > ghost.txt
    ```
 
-5. Strapi
+5. N8N
 
    ```shell
-   docker run -e NODE_DEBUG="module" strapi/strapi:3.6.8 strapi develop 2>&1 | tee strapi.log
-   python extract.py --type node --log_file strapi.log > strapi.txt
+   docker run -e NODE_DEBUG="module" n8nio/n8n:1.67.1 2>&1 | tee n8n.log
+   python extract.py --type node --log_file n8n.log > n8n.txt
    ```
